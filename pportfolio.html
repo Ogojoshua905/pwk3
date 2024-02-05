@@ -18,8 +18,8 @@
       </ul>
     </nav>
     <h1>Ogo Joshua Alias (<em>JoshDomain and Botproplayer</em>)</h1>
-    <section>
-        <h2 id="AM" class="first">About Me</h2>
+    <section id="AM" class="first">
+        <h2>About Me</h2>
         <p>Welcome to My Domain, The JoshDomain, Now Let me tell You a Little about Myself. <br> I'm a Secondary School Graduate and a Frontend Web Developer WitH Both 6 Month And 4 Weeks Respectively. A Graduate Of Kilmore Nur/Pry and College and An Undergraduate Of Univelcity Tech School, Yaba, Lagos.</p>
         
         <h3>Hobbies</h3>
@@ -34,7 +34,7 @@
 
 </div>
     
-    <table border="8" id="table">
+    <table border="3" id="table" width="205">
         <thead>
             <tr>
                 <th>Topics</th>
@@ -80,13 +80,20 @@
             <li>Andriod OS</li>
             <li>Frontend Web Development</li>
         </ol>
+    </section>
 
-        <p><a href="tel:+234 9160310791" id="contact">Contact Us</a></p><br>
-       <p>or You can also Send a Mail to <a href="mailto:joshuaexcellency1@gmail.com?bcc=algebra905@gmail.com">Email</a></p>
+
+    <section>
+    <ul>
+        <li><a href="tel:+234 9160310791" id="contact">Contact Us</a></li>
+        <li>Or You Can HMU on whatsapp<a href="https://api.whatsapp.com/send?phone=9160310791">whatsapp</a></li>
+       <li>or You can also Send a Mail to <a href="mailto:joshuaexcellency1@gmail.com">Email</a></li>
+    </ul> 
     </section>  
+ 
     
-    
-    <form id="form">
+    <form>
+        <h2 id="form">Personal Details Below</h2>
         <fieldset>
             <legend>
                 Personal Data
@@ -96,11 +103,11 @@
                 <li>
                     <label for="fname">First Name</label>
                     <input type="text" name="text" id="fname" required placeholder="Your First Name">
-                </li>
+                </li><br>
                 <li>
                     <label for="surname">Surname</label>
                     <input type="text" name="text" id="surname" required placeholder="Your Surname">
-                </li>
+                </li><br>
                 <li>
                     <label for="Email">Email Address</label>
                     <input type="email" name="email" id="email" placeholder="example @abc.com">
@@ -108,49 +115,36 @@
                 <li>
                     <label for="psw">Password</label>
                     <input type="password" placeholder="Enter Password" name="psw" hidden required>
-                </li>
+                </li><br>
+
+                
+                <li>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="tel" id="phone" required placeholder="+234********">
+                </li><br>
+                
+                <li>
+                    <label for="Address">Address</label>
+                    <input type="text" name="Address" id="Address" placeholder="1, Olubisi Street Ejigbo Lagos">
+                </li><br>
+
+                <li>
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="date" id="dob">
+                </li><br>
 
                 <li>
                     <p>UPLOAD Document</p>
                     <input type="file" name="fileupload" id="upload" accept=".doc">
-                </li>
-
+                </li><br>
+                
                 <li>
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="tel" id="phone" required placeholder="+234********">
-                </li>
-                <li>
-                    <label for="dob">Date Of Birth</label>
-                    <input type="date" name="date" id="dob">
-                </li>
-                <li>
-                    <label for="country">Country</label>
+                    <label for="skills">Skills</label>
                     <select>
-                        <optgroup label="Africa"></optgroup>
-                        <option value="ng" selected>Nigeria</option>
-                        <option value="gh">Ghana</option>
-                        <option value="sa">South Africa</option>
-
-                        <optgroup label="America"></optgroup>
-                        <option value="mex">Mexico</option>
-                        <option value="br">Brazil</option>
-
-                        <optgroup label="Europe"></optgroup>
-                        <option value="fr">France</option>
-                        <option value="en">England</option>
-
-                        <optgroup label="Asia"></optgroup>
-                        <option value="ch">China</option>
-                        <option value="jp">Japan</option>
-                    </select>
-                </li>
-                <li>
-                <label for="skills">Skills</label>
-                <select>
-                    <optgroup label="Tech Aspeect"></optgroup>
+                        <optgroup label="Tech Aspect"></optgroup>
                 </select>
                 </li>
-                    
+                <input type="submit" value="submit" class="I">
             </ul>
         </fieldset>
         <fieldset>
@@ -162,12 +156,8 @@
         </fieldset>
 
 
-        <div class="tacbox">
-            <input id="checkbox" type="checkbox"/>
-            <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
-          </div>
 
-        <input type="submit" value="submit">
+        
     </form>
 </body>
 </html>
