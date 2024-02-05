@@ -5,7 +5,9 @@
 
 h1{
     color: #331f1f;
+    text-align: center;
 }
+
 ul{
         list-style-type: none;
         margin: 0;
@@ -36,7 +38,7 @@ h2{
 }
 
 body{
-  background: indigo;
+  background: #c1f;
 }
 
 .tacbox {
@@ -49,19 +51,10 @@ body{
   }
   
 input {
-    height: 2em;
-    width: 2em;
+    height: 100px;
+    width: 100px;
     vertical-align: middle;
   }
 
-  form{
-    height: 50px;    
-    border-style: double;
-    width: max-content;
-  }
 
-  .first{
-    background: (#555) content-box;
-  }
-
-  img[]
+img[src$='png']
