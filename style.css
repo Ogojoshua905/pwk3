@@ -36,7 +36,11 @@ h2{
 }
 
 body{
-    background-color: #7a86dc;
+  padding: 0px;
+  width:100%;
+  height:100%;
+  margin:auto;
+  font-family:Arial
 }
 
 .tacbox {
@@ -56,6 +60,37 @@ input {
 
   form{
     height: 50px;    
-    border-style: dotted;
+    border-style: double;
     width: max-content;
   }
+
+  .first{
+    background: (#555) content-box;
+  }
+
+  #wrapper{
+    width: 700px;
+    height: auto;
+    border: 1px solid black;
+    margin: 0px auto;
+    }
+
+    #main{
+      height: 300px;
+      }
+
+      #wrapper #main img {
+        width: 700px;	
+        height: 300px;
+        border: 1px solid gray	
+        }
+    
+        #header #nav ul li{
+          list-style-type: none;
+          display: inline;
+          padding: 3px 8px 3px 8px;
+          background-color: #99FF;
+          font-size: 21px; 
+          font-family: pristina;
+          }
+          

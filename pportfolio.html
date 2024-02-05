@@ -19,7 +19,8 @@
     </nav>
     <h1>Ogo Joshua Alias (<em>JoshDomain and Botproplayer</em>)</h1>
     <section>
-        <h2 id="AM">About Me</h2>
+        <div id="wrapper">
+            <div id="main"></div><h2 id="AM" class="first">About Me</h2>
         <p>Welcome to My Domain, The JoshDomain, Now Let me tell You a Little about Myself. <br> I'm a Secondary School Graduate and a Frontend Web Developer WitH Both 6 Month And 4 Weeks Respectively. A Graduate Of Kilmore Nur/Pry and College and An Undergraduate Of Univelcity Tech School, Yaba, Lagos.</p>
         
         <h3>Hobbies</h3>
@@ -31,6 +32,8 @@
     <li>Intro/Extrovert</li><br>
     <li>Socializing</li>
     </section>
+
+</div>
     
     <table border="8" id="table">
         <thead>
@@ -83,44 +86,43 @@
        <p>or You can also Send a Mail to <a href="mailto:joshuaexcellency1@gmail.com?bcc=algebra905@gmail.com">Email</a></p>
     </section>  
     
-    <form>
+    <form method="post">
         <fieldset>
             <legend>
                 Personal Data
             </legend>
 
             <ul>
-                <li>
+                <div class="container">
+                
                     <label for="fname">First Name</label>
                     <input type="text" name="text" id="fname" required placeholder="Your First Name">
-                </li>
-                <li>
+                
                     <label for="surname">surname</label>
                     <input type="text" name="text" id="surname" required placeholder="Your Surname">
-                </li>
-                <li>
+                
+                
                     <label for="Email">Email Address</label>
                     <input type="email" name="email" id="email" placeholder="example @abc.com">
-                </li>
+                
 
-                <li>
+                
                     <label for="Password">Password</label>
                     <input type="password" name="password" id="password" hidden>
-                </li>
-                <li>
+                
+            </div>
+                
                     <p>UPLOAD Document</p>
-                    <input type="file" name="fileupload" id="upload" accept=".png">
-                </li>
+                    <input type="file" name="fileupload" id="upload" accept=".doc">
+                
 
-                <li>
                     <label for="phone">Phone Number</label>
                     <input type="tel" name="tel" id="phone" required placeholder="+234********">
-                </li>
-                <li>
+            
+                
                     <label for="dob">Date Of Birth</label>
                     <input type="date" name="date" id="dob">
-                </li>
-                <li>
+                
                     <label for="country">Country</label>
                     <select>
                         <optgroup label="Africa"></optgroup>
@@ -140,9 +142,7 @@
                         <option value="ch">China</option>
                         <option value="jp">Japan</option>
                     </select>
-                </li>
-
-                    <li>
+                
                         <p>Gender</p>
                         <input type="radio" name="Gender" id="male">
                         <label for="Male">male</label> <br>
@@ -159,7 +159,7 @@
                 <legend>
                     Official use
                 </legend>
-                <p>This Mail Will be sent to an Unmonitored Mail</p>
+                <p>This Mail Will be sent to an Authorised Inbox</p>
 
         </fieldset>
 
@@ -168,7 +168,6 @@
             <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
           </div>
 
-        <input type="submit" value="sign up">
         <input type="submit" value="submit">
     </form>
 </body>
