@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <ul>
+        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="#AM">About Me</a></li>
+        <li><a href="#table">Class Review</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+      </ul>
+    </nav>
+    <h1>Ogo Joshua Alias (<em>JoshDomain and Botproplayer</em>)</h1>
+    <section>
+        <h2 id="AM">About Me</h2>
+        <p>Welcome to My Domain, The JoshDomain, Now Let me tell You a Little about Myself. <br> I'm a Secondary School Graduate and a Frontend Web Developer WitH Both 6 Month And 4 Weeks Respectively. A Graduate Of Kilmore Nur/Pry and College and An Undergraduate Of Univelcity Tech School, Yaba, Lagos.</p>
+        
+        <h3>Hobbies</h3>
+    <li>Eating</li><br>
+    <li>Sleeping</li><br>
+    <li>Studying</li><br>
+    <li>Making Research</li> <br>
+    <li>Online Gaming </li><br>
+    <li>Intro/Extrovert</li><br>
+    <li>Socializing</li>
+    </section>
+    
+    <table border="8" id="table">
+        <thead>
+            <tr>
+                <th>Topics</th>
+                <th>Description</th>
+                <th>Images</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Introduction to Frontend Web Development</th>
+                <td>I learnt how about the different element and tags in html, and also learned when and how to use them</td>
+                <td><img src="./html.jpg" alt="Intro" title="Introduction To Frontend" width="500"></td>
+            </tr>
+            <tr>
+                <th>Geopoltical Zones In Nigeria</th>
+                <td>We were asked to create a webpage for each Geopoltical Zones IN Nigeria which should include A navigation Bar</td>
+                <td><img src="./geopol.jpg" alt="The Six Geopolitical Zones Using Html" title="The Six Geopolitical Zones Using Html" width="500"></td>
+            </tr>
+            <tr>
+                <th>A Formal Letter</th>
+                <td>We were asked to write a letter using the preview that was provided for us and we should use css so we would be prepared for the next class</td>
+                <td><img src="./letter.jpg" alt="a Letter using Html" title="a Letter using Html" width="500"></td>
+            </tr>
+            <tr> 
+                <th>Travel Guide</th>
+                <td>An Assignment On Travel Guide of differnt location in which we have to test our skill in html thereby we tablate the content and we also need to put a navigation bar in the Assignment</td>
+                <td><img src="./table.jpg" alt="An Image Of A Travel Guide" title="An Image Of A Travel Guide" width="500"></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <section>
+        <h2>Skills</h2>
+        <ol>
+            <li>Programming Language</li>
+            <li>Microsoft Word/Excel</li>
+            <li>Phone Repair</li>
+            <li>Andriod OS</li>
+            <li>Frontend Web Development</li>
+        </ol>
+
+        <p><a href="tel:+234 9160310791" id="contact">Contact Us</a></p><br>
+       <p>or You can also Send a Mail to <a href="mailto:joshuaexcellency1@gmail.com?bcc=algebra905@gmail.com">Email</a></p>
+    </section>  
+    
+    <form>
+        <fieldset>
+            <legend>
+                Personal Data
+            </legend>
+
+            <ul>
+                <li>
+                    <label for="fname">First Name</label>
+                    <input type="text" name="text" id="fname" required placeholder="Your First Name">
+                </li>
+                <li>
+                    <label for="surname">surname</label>
+                    <input type="text" name="text" id="surname" required placeholder="Your Surname">
+                </li>
+                <li>
+                    <label for="Email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="example @abc.com">
+                </li>
+
+                <li>
+                    <label for="Password">Password</label>
+                    <input type="password" name="password" id="password" hidden>
+                </li>
+                <li>
+                    <p>UPLOAD Document</p>
+                    <input type="file" name="fileupload" id="upload" accept=".png">
+                </li>
+
+                <li>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="tel" id="phone" required placeholder="+234********">
+                </li>
+                <li>
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="date" id="dob">
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <select>
+                        <optgroup label="Africa"></optgroup>
+                        <option value="ng" selected>Nigeria</option>
+                        <option value="gh">Ghana</option>
+                        <option value="sa">South Africa</option>
+
+                        <optgroup label="America"></optgroup>
+                        <option value="mex">Mexico</option>
+                        <option value="br">Brazil</option>
+
+                        <optgroup label="Europe"></optgroup>
+                        <option value="fr">France</option>
+                        <option value="en">England</option>
+
+                        <optgroup label="Asia"></optgroup>
+                        <option value="ch">China</option>
+                        <option value="jp">Japan</option>
+                    </select>
+                </li>
+
+                    <li>
+                        <p>Gender</p>
+                        <input type="radio" name="Gender" id="male">
+                        <label for="Male">male</label> <br>
+
+                        <input type="radio" name="Gender" id="Female" checked>
+                        <label for="Female">Female</label> <br>
+
+                        <input type="radio" name="Gender" id="prefer">
+                        <label for="prefer">prefer not to say</label>
+                    </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+                <legend>
+                    Official use
+                </legend>
+                <p>This Mail Will be sent to an Unmonitored Mail</p>
+
+        </fieldset>
+
+        <div class="tacbox">
+            <input id="checkbox" type="checkbox"/>
+            <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+          </div>
+
+        <input type="submit" value="sign up">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
