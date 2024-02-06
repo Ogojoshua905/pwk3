@@ -34,8 +34,8 @@ body{
 }
   
 input {
-    height: 100px;
-    width: 100px;
+    height: 20px;
+    width: 150px;
     vertical-align: middle;
 }
 
@@ -62,9 +62,9 @@ form{
 }
 
 
-/* :hover>p:nth-last-child(2){
+:hover>p:nth-last-child(2){
     background-color: #3E91C2;
-}  */
+} 
 
 h2{
     background-color: #3E91C2; width: 300px;
@@ -75,4 +75,41 @@ h2{
 }
 h1{
      background-color: #4A768F;
+}
+
+.contact{
+    display: inline;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+.whatsapp{
+    display: inline;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.email{
+    display: inline;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.email:hover{
+    color: red;
+}
+
+.whatsapp:hover{
+    color: greenyellow;
+}
+
+.contact:hover{
+    color: green;
+}
+
+.ghost{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #4A768F;
 }

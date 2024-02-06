@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <title>About Me</title>
+
 </head>
 <body>
     <nav>
@@ -17,8 +18,11 @@
         <li><a href="#form">Your Information</a></li>
       </ul>
     </nav>
+
+    
     <h1>Ogo Joshua Alias (<em>JoshDomain and Botproplayer</em>)</h1>
-    <section id="AM" class="first">
+    <div id="logo" class="ghost"><img src="./ghost.jpg" alt="Player UID" title="CODM UID" width="200px"></div>
+    <section id="AM">
         <h2>About Me</h2>
         <p>Welcome to My Domain, The JoshDomain, Now Let me tell You a Little about Myself. <br> I'm a Secondary School Graduate and a Frontend Web Developer WitH Both 6 Month And 4 Weeks Respectively. A Graduate Of Kilmore Nur/Pry and College and An Undergraduate Of Univelcity Tech School, Yaba, Lagos.</p>
         
@@ -29,7 +33,8 @@
     <li>Making Research</li> <br>
     <li>Online Gaming </li><br>
     <li>Intro/Extrovert</li><br>
-    <li>Socializing</li>
+    <li>Socializing</li><br>
+    <li>Disassembling and Assembling Of Smartphone</li>
     </section>
 
 </div>
@@ -85,9 +90,9 @@
 
     <section>
     <ul>
-        <li><a href="tel:+234 9160310791" id="contact">Contact Us</a></li>
-        <li>Or You Can HMU on whatsapp<a href="https://api.whatsapp.com/send?phone=9160310791">whatsapp</a></li>
-       <li>or You can also Send a Mail to <a href="mailto:joshuaexcellency1@gmail.com">Email</a></li>
+        <li><a href="tel:+234 9160310791" id="contact" class="contact">Contact Us</a></li>
+        <li>Or You Can HMU on<a href="https://api.whatsapp.com/send?phone=9160310791" class="whatsapp">whatsapp</a></li>
+       <li>or You can also Send us an<a href="mailto:joshuaexcellency1@gmail.com" class="email">Email</a></li>
     </ul> 
     </section>  
  
@@ -101,7 +106,7 @@
 
             <ul>
                 <li>
-                    <label for="fname">First Name</label>
+                    <label for="fname" class="first">First Name</label>
                     <input type="text" name="text" id="fname" required placeholder="Your First Name">
                 </li><br>
                 <li>
@@ -113,9 +118,9 @@
                     <input type="email" name="email" id="email" placeholder="example @abc.com">
                 </li>
                 <li>
-                    <label for="psw">Password</label>
-                    <input type="password" placeholder="Enter Password" name="psw" hidden required>
-                </li><br>
+                    <label for="password">password</label>
+                    <input type="password" name="password" id="password">
+                </li>
 
                 
                 <li>
@@ -138,12 +143,6 @@
                     <input type="file" name="fileupload" id="upload" accept=".doc">
                 </li><br>
                 
-                <li>
-                    <label for="skills">Skills</label>
-                    <select>
-                        <optgroup label="Tech Aspect"></optgroup>
-                </select>
-                </li>
                 <input type="submit" value="submit" class="I">
             </ul>
         </fieldset>
@@ -151,7 +150,7 @@
                 <legend>
                     Official use
                 </legend>
-                <p>This Mail Will be sent to an Unmonitored Mail</p>
+                <p>This Mail Will be sent to an Official Mail Inbox</p>
 
         </fieldset>
 
