@@ -4,159 +4,316 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./style.css"> -->
     <title>About Me</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+   
+        nav .logo{
+        width: 80px;
+        }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 17px;
+    }
+
+    nav{
+        width: 100%;
+        /* position: absolute; */
+        top: 0;
+        left: 0;
+        padding: 20px 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-image: url(./navba.jpg);
+    }
+
+    .portfolio{
+        width:100%;
+        height: 100vh;
+        /* background-image: url(./navba.jpg);
+        position: relative; */
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+    }
+
+    .content h1{
+        font-size: 160px;
+        color: black;
+        font-weight: 600;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+    .back{
+       background-image: url(./COD.png);
+       background-attachment: fixed;
+       background-repeat: no-repeat;
+       background-position: center;
+    }
+
+     .content h1:hover{
+        -webkit-text-stroke: 2px black;
+        color: transparent;
+    }
+
+    .me{
+        float: right;
+        border-radius: 50px;
+    }
+
+    /* .content a{
+        text-decoration: none;
+        display: inline-block;
+        color: #FAE01E;
+        font-size: 24px;
+        border: 2px solid black;
+        padding: 14px 70px;
+        border-radius: 50px;
+        margin-top: 20px;
+    } */
+
+    .fa-youtube{
+        font-size: 50px;
+        color: red;
+    }
+    .fa-square-x-twitter{
+        font-size: 50px;
+    }
+
+    .fa-instagram{
+        font-size: 50px;
+        color: palevioletred;
+    }
+
+    .fa-tiktok{
+        font-size: 50px;
+    }
+
+    .fa-linkedin{
+        font-size: 50px;
+        color: navy;
+    }
+
+    .fa-discord{
+        font-size: 50px;
+        color: darkslateblue;
+    }
+
+    .fa-github{
+        font-size: 50px;
+
+    }
+
+    .fa-envelope{
+        font-size: 50px;
+        color: crimson;
+    }
+
+    .fa-whatsapp{
+        font-size: 50px;
+        color: green;
+    }
+    
+    main div{
+        border: 5px Solid black;
+    }
+    main{
+            display: grid;
+            grid-template-columns: repeat(5, 2fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-template-areas: 
+            "a1 a1 a1 a1"
+            "c5 c3 c6 d4"
+            "e5 b2 f9 h1";
+        }
+
+        main div:nth-of-type(1){
+            grid-area: a1;
+        }
+        main div:nth-of-type(2){
+            grid-area: b2;
+        }
+        main div:nth-of-type(3){
+            grid-area: c3;
+        }
+        main div:nth-of-type(4){
+            grid-area: c5;
+        }
+        main div:nth-of-type(5)
+        {
+            grid-area: c6;
+        }
+        main div:nth-of-type(6)
+        {
+            grid-area: d4;
+        }
+        main div:nth-of-type(7)
+        {
+            grid-area: e5;
+        }
+        main div:nth-of-type(8)
+        {
+            grid-area: f9;
+        }
+        main div:nth-of-type(9){
+            grid-area: h1;
+        }
+    </style>
 </head>
-<body>
-    <nav>
-    <ul>
-        <li><a href="./index.html" class="active">Home</a></li>
-        <li><a href="#AM">About Me</a></li>
-        <li><a href="#table">Class Review</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#form">Your Information</a></li>
-      </ul>
-    </nav>
+<body class="back">
 
     
-    <h1>Ogo Joshua Alias (<em>JoshDomain and Botproplayer</em>)</h1>
-    <div id="logo" class="ghost"><img src="./ghost.jpg" alt="Player UID" title="CODM UID" width="200px"></div>
-    <section id="AM">
-        <h2>About Me</h2>
-        <p>Welcome to My Domain, The JoshDomain, Now Let me tell You a Little about Myself. <br> I'm a Secondary School Graduate and a Frontend Web Developer WitH Both 6 Month And 4 Weeks Respectively. A Graduate Of Kilmore Nur/Pry and College and An Undergraduate Of Univelcity Tech School, Yaba, Lagos.</p>
+    <!-- <nav>
+
+    </form> -->
+    <div class="Portfolio">
+        <nav>
+            <a href="./index.html"><img src="./CODRBG.png" title="Call Of Duty Logo" class="logo"></a>
+            <ul>
+                <li><a href="#AM">About Me</a></li>
+            <li><a href="#DB">Dev Bio</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#FPRO">Frontend Class Project</a></li>
+            <li><a href="#yf">Your Info</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    
+    
+    
+    <div class="content">
+        <h1>Ogo Joshua</h1>
+        
+        <h2 id="AM">About Me</h2>
+        <img src="./portfolioimg.jpg" class="me" width="200px">
+        <P>My Name is Ogo Joshua AKA JoshDomain AKA Botpro, I'm a Senior Secondary School Graduate Of <abbr title="Kilmore Nursery/Primary And College"></abbr> with an <abbr title="Senior Secondary Certifcate of Education">SSCE</abbr> Result and <br>also Univercity Aspirant who is going to sit for his <abbr title="Joint Admission Matriculation Board">Jamb</abbr> this year and also among the Jan24 Cohort of Univelcity <br> learning Frontend Web Dev in which we are currently on the 5 <sup>th</sup> Week of his tech Career.</P>
+        
+        <h2 id="DB">Dev Bio</h2>
         
         <h3>Hobbies</h3>
     <li>Eating</li><br>
     <li>Sleeping</li><br>
     <li>Studying</li><br>
     <li>Making Research</li> <br>
-    <li>Online Gaming </li><br>
+    <li>Online Gaming (i.e Call Of Duty) </li><br>
     <li>Intro/Extrovert</li><br>
     <li>Socializing</li><br>
-    <li>Disassembling and Assembling Of Smartphone</li>
-    </section>
+    <li>Disassembling and Assembling Of Smartphone</li><br>
 
-</div>
-    
-    <table border="3" id="table" width="205">
-        <thead>
-            <tr>
-                <th>Topics</th>
-                <th>Description</th>
-                <th>Images</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Introduction to Frontend Web Development</th>
-                <td>I learnt how about the different element and tags in html, and also learned when and how to use them</td>
-                <td><img src="./html.jpg" alt="Intro" title="Introduction To Frontend" width="500"></td>
-            </tr>
-            <tr>
-                <th>Geopoltical Zones In Nigeria</th>
-                <td>We were asked to create a webpage for each Geopoltical Zones IN Nigeria which should include A navigation Bar</td>
-                <td><img src="./geopol.jpg" alt="The Six Geopolitical Zones Using Html" title="The Six Geopolitical Zones Using Html" width="500"></td>
-            </tr>
-            <tr>
-                <th>A Formal Letter</th>
-                <td>We were asked to write a letter using the preview that was provided for us and we should use css so we would be prepared for the next class</td>
-                <td><img src="./letter.jpg" alt="a Letter using Html" title="a Letter using Html" width="500"></td>
-            </tr>
-            <tr> 
-                <th>Travel Guide</th>
-                <td>An Assignment On Travel Guide of differnt location in which we have to test our skill in html thereby we tablate the content and we also need to put a navigation bar in the Assignment</td>
-                <td><img src="./table.jpg" alt="An Image Of A Travel Guide" title="An Image Of A Travel Guide" width="500"></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td></td>
-            </tr>
-        </tfoot>
-    </table>
+    <main id="Skills">
+        <div>Skills</div>
+        <div><img src="./FGH.png" width="190px"></div>
+        <div>Frontend Web Programmer</div>
+        <div>Cooking</div>
+        <div>Phone Repair</div>
+        <div>Gadget Enthusiast/Research</div>
+        <div><img src="./cooking.jpg" width="190px"></div>
+        <div><img src="./phonerep.jpg" width="190px"></div>
+        <div><img src="./gadget.jpg" width="190px"></div>
+    </main>
 
-    <section>
-        <h2>Skills</h2>
-        <ol>
-            <li>Programming Language</li>
-            <li>Microsoft Word/Excel</li>
-            <li>Phone Repair</li>
-            <li>Andriod OS</li>
-            <li>Frontend Web Development</li>
-        </ol>
-    </section>
+        <h2 id="FPRO">Frontend Project</h2>
+        <table border="3" id="table" width="205">
+            <thead>
+                <tr>
+                    <th>Topics</th>
+                    <th>Description</th>
+                    <th>Images</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Introduction to Frontend Web Development</th>
+                    <td>I learnt how about the different element and tags in html, and also learned when and how to use them</td>
+                    <td><img src="./html.jpg" alt="Intro" title="Introduction To Frontend" width="500"></td>
+                </tr>
+                <tr>
+                    <th>Geopoltical Zones In Nigeria</th>
+                    <td>We were asked to create a webpage for each Geopoltical Zones IN Nigeria which should include A navigation Bar</td>
+                    <td><img src="./geopol.jpg" alt="The Six Geopolitical Zones Using Html" title="The Six Geopolitical Zones Using Html" width="500"></td>
+                </tr>
+                <tr>
+                    <th>A Formal Letter</th>
+                    <td>We were asked to write a letter using the preview that was provided for us and we should use css so we would be prepared for the next class</td>
+                    <td><img src="./letter.jpg" alt="a Letter using Html" title="a Letter using Html" width="500"></td>
+                </tr>
+                <tr> 
+                    <th>Travel Guide</th>
+                    <td>An Assignment On Travel Guide of differnt location in which we have to test our skill in html thereby we tablate the content and we also need to put a navigation bar in the Assignment</td>
+                    <td><img src="./table.jpg" alt="An Image Of A Travel Guide" title="An Image Of A Travel Guide" width="500"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>End Of the Table</td>
+                </tr>
+            </tfoot>
+        </table>
 
 
-    <section>
-    <ul>
-        <li><a href="tel:+234 9160310791" id="contact" class="contact">Contact Us</a></li>
-        <li>Or You Can HMU on<a href="https://api.whatsapp.com/send?phone=9160310791" class="whatsapp">whatsapp</a></li>
-       <li>or You can also Send us an<a href="mailto:joshuaexcellency1@gmail.com" class="email">Email</a></li>
-    </ul> 
-    </section>  
- 
-    
-    <form>
-        <h2 id="form">Personal Details Below</h2>
-        <fieldset>
-            <legend>
-                Personal Data
-            </legend>
-
-            <ul>
-                <li>
-                    <label for="fname" class="first">First Name</label>
-                    <input type="text" name="text" id="fname" required placeholder="Your First Name">
-                </li><br>
-                <li>
-                    <label for="surname">Surname</label>
-                    <input type="text" name="text" id="surname" required placeholder="Your Surname">
-                </li><br>
-                <li>
-                    <label for="Email">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="example @abc.com">
-                </li>
-                <li>
-                    <label for="password">password</label>
-                    <input type="password" name="password" id="password">
-                </li>
-
+        <section class="contact" id="yf">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name" class="name">Name:
+                    <input type="text" id="name">
+                </label><br>
                 
-                <li>
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" name="tel" id="phone" required placeholder="+234********">
-                </li><br>
-                
-                <li>
-                    <label for="Address">Address</label>
-                    <input type="text" name="Address" id="Address" placeholder="1, Olubisi Street Ejigbo Lagos">
-                </li><br>
 
-                <li>
-                    <label for="dob">Date Of Birth</label>
-                    <input type="date" name="date" id="dob">
-                </li><br>
+                <label for="email" class="email">Email:
+                    <input type="text" name="email" id="email">
+                </label><br>
 
-                <li>
-                    <p>UPLOAD Document</p>
-                    <input type="file" name="fileupload" id="upload" accept=".doc">
-                </li><br>
-                
-                <input type="submit" value="submit" class="I">
-            </ul>
-        </fieldset>
-        <fieldset>
-                <legend>
-                    Official use
-                </legend>
-                <p>This Mail Will be sent to an Official Mail Inbox</p>
+                <label for="message">Message:
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="type here"></textarea>
+                </label>
+                <br>
+                <button>
+                    submit
+                </button>
+            </form>
+        </section>
+    </div>
 
-        </fieldset>
+    <footer class="footerwrap" id="contact">
+        <h2>Follow Me And Stay Up-to-dates On My Social Media Platform</h2>
 
-
-
+        <a href="https://x.com/algebra905?s=21"><i class="fa-brands fa-square-x-twitter"></i></a>
         
-    </form>
+        <a href="https://www.youtube.com/@anonymous90510"><i class="fa-brands fa-youtube"></i></a>
+        
+        <a href="https://www.instagram.com/officialalgebra905?igsh=NXgyOHVnbTZ2dzV0&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+        
+        <a href="https://www.tiktok.com/@algebralyrics905?_t=8jnaPU30UOD&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        
+        <a href="http://www.linkedin.com/in/ogo-joshua-9572832a4"><i class="fa-brands fa-linkedin"></i></a>
+        
+        <i class="fa-brands fa-discord"></i>
+        
+        <a href="https://github.com/Ogojoshua905"><i class="fa-brands fa-github"></i></a>
+        
+        <a href="mailto:joshuaexcellency1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        
+        <a href="https://api.whatsapp.com/send?phone=9160310791"><i class="fa-brands fa-whatsapp"></i></a>
+
+        <p class="copyright">&copy; Copyright 2024 JoshDomain Portfolio</p>
+    </footer>
+</div>
 </body>
+
 </html>
